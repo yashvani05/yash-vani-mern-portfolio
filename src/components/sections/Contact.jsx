@@ -18,7 +18,7 @@ const Contact = () => {
     setForm({ ...form, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmits = async (e) => {
     e.preventDefault();
     setLoading(true); // Show loading state
 
@@ -51,7 +51,7 @@ const Contact = () => {
             <div className="flex-center card-border rounded-xl p-10">
               <form
                 ref={formRef}
-                onSubmit={handleSubmit}
+                onSubmit={handleSubmits}
                 className="w-full flex flex-col gap-7"
               >
                 <div>
